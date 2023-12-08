@@ -10,3 +10,23 @@
    }
 
    console.log(`Freezing: ${freezing}`);
+
+   //#B2
+
+   const bitcoinPrices = [10, 18, 33, 7, 31, 3, 8, 22, 29, 7, 8];
+   
+   let maxProfit = 0;
+
+   for (let i = 0; i < bitcoinPrices.length - 1; i++) {
+    for (let j = i + 1; j < bitcoinPrices.length; j++) {
+        const buyPrice = bitcoinPrices[i];
+        const sellPrice = bitcoinPrices[j];
+        const currentProfit = sellPrice - buyPrice;
+        if (currentProfit > maxProfit) {
+            maxProfit = currentProfit;
+        }
+    }
+}
+
+console.log(`Максимальная прибыль: ${maxProfit}`);
+   
