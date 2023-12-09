@@ -11,7 +11,7 @@
    }
 
    console.log(`Замерзаний: ${freezing}`);
-   //#B1.1   
+   //#B1.2  
    let minus = 0;
    let maxMinus = 0;
    let currentStart = 0;
